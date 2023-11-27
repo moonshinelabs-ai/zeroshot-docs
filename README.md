@@ -1,1 +1,1 @@
-# zeroshot-docs
+# Docs for Zeroshot
