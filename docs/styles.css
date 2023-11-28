@@ -38,6 +38,7 @@ main {
 .logo {
     max-width: 60px;
     padding-right: 5px;
+    padding-top: 4px;
 }
 
 a {
@@ -69,7 +70,7 @@ a {
 
 .menu-nav:hover {
     font-family: "Oxygen Mono", monospace;
-    color:#00ff75;
+    color: #00ff75;
 }
 
 /* hero section */
@@ -89,7 +90,7 @@ a {
 
 /* .gif-container {
     flex: 1; /* Adjust the flex-grow as needed */
-    /* padding: 20px;
+/* padding: 20px;
     max-width: 35%;
 } */
 
@@ -122,7 +123,7 @@ a {
 }
 
 .try-button,
-.github-button,
+.youtube-button,
 .trainmodel-button {
     display: inline-block;
     height: 64px;
@@ -136,7 +137,7 @@ a {
     margin-right: 20px;
 }
 
-.github-button {
+.youtube-button {
     background-color: black;
     color: white;
 }
@@ -252,7 +253,6 @@ pre {
     border-radius: 8px;
 }
 
-
 /* performance section */
 .performance-section {
     display: flex;
@@ -283,7 +283,6 @@ pre {
     margin: auto;
     border-radius: 8px;
 }
-
 
 /* how to section */
 .how-container {
