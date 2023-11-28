@@ -20,24 +20,79 @@ main {
     margin: auto; /* Centers the container */
 }
 
+/* header nav */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 240px 0px 240px;
+    align-items: center;
+}
+
+.company-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    max-width: 60px;
+    padding-right: 5px;
+    padding-top: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.home-nav {
+    border: none; /* Remove border */
+    background-color: transparent; /* Set background to transparent */
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    outline: none; /* Remove outline on focus */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+}
+
+.menu-nav {
+    border: none; /* Remove border */
+    background-color: transparent; /* Set background to transparent */
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none; /* Remove outline on focus */
+    padding: 10px 20px; /* Add padding for better visual appearance */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+}
+
+.menu-nav:hover {
+    font-family: "Oxygen Mono", monospace;
+    color: #00ff75;
+}
+
 /* hero section */
 .hero-container {
     display: flex;
-    justify-content: space-around; /* Adjust as needed */
+    justify-content: center; /* Adjust as needed */
     align-items: center; /* This vertically aligns the children */
 }
 
 .hero-text-container {
-    flex: 1; /* Adjust the flex-grow as needed */
-    padding: 20px; /* Optional for spacing */
+    /* flex: 1; Adjust the flex-grow as needed */
+    padding-top: 25vh; /* Optional for spacing */
+    padding-bottom: 20vh;
     /* Other existing styles */
+    text-align: center;
 }
 
-.gif-container {
+/* .gif-container {
     flex: 1; /* Adjust the flex-grow as needed */
-    padding: 20px;
+/* padding: 20px;
     max-width: 35%;
-}
+} */
 
 .hero-gif {
     width: 100%;
@@ -51,13 +106,12 @@ main {
     font-weight: 700;
     max-width: 860px;
     padding-bottom: 30px;
-    padding-top: 20px;
 }
 
 .hero-subtext {
     font-family: "Oxygen Mono", monospace;
     font-size: 22px;
-    max-width: 760px;
+    max-width: 860px;
     padding-bottom: 30px;
     line-height: 160%;
     letter-spacing: 0.24px;
@@ -66,11 +120,10 @@ main {
 .hero-buttons {
     display: flex;
     justify-content: center;
-    margin: 30px;
 }
 
 .try-button,
-.github-button,
+.youtube-button,
 .trainmodel-button {
     display: inline-block;
     height: 64px;
@@ -81,10 +134,10 @@ main {
     cursor: pointer;
     border: 1.5px solid;
     border-radius: 8px;
-    margin: 20px;
+    margin-right: 20px;
 }
 
-.github-button {
+.youtube-button {
     background-color: black;
     color: white;
 }
@@ -102,7 +155,7 @@ main {
     align-items: center;
     padding: 20px;
     margin-top: 100px; /* Space between this and the content-container */
-    margin-bottom: 140px;
+    margin-bottom: 240px;
 }
 
 .feature-item {
@@ -133,37 +186,6 @@ main {
     right: 10px;
     font-size: 28px;
     color: white;
-}
-
-/* performance section */
-.performance-section {
-    display: flex;
-    padding: 40px 10px;
-    margin-top: 20px; /* Adjust as needed */
-    align-items: center;
-}
-
-.performance-text-container {
-    flex-basis: 30%;
-    margin-right: 120px;
-    margin-left: 40px;
-    font-size: 26px;
-    color: gray;
-    font-weight: 700;
-    max-width: 860px;
-}
-
-.performance-chart-container {
-    flex-basis: 70%;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.performance-example {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    border-radius: 8px;
 }
 
 /* video section */
@@ -228,6 +250,37 @@ pre {
     max-width: 100%;
     margin-left: 3em;
     overflow-x: auto; /* Allows scrolling for long code lines */
+    border-radius: 8px;
+}
+
+/* performance section */
+.performance-section {
+    display: flex;
+    padding: 40px 10px;
+    margin-top: 20px; /* Adjust as needed */
+    align-items: center;
+}
+
+.performance-text-container {
+    flex-basis: 30%;
+    margin-right: 120px;
+    margin-left: 40px;
+    font-size: 26px;
+    color: gray;
+    font-weight: 700;
+    max-width: 860px;
+}
+
+.performance-chart-container {
+    flex-basis: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.performance-example {
+    width: 100%;
+    height: auto;
+    margin: auto;
     border-radius: 8px;
 }
 
