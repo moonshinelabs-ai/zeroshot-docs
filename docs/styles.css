@@ -10,22 +10,37 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     min-height: 100vh;
     font-family: "Open Sans", sans-serif;
     color: white;
 }
 
+code {
+    @media screen and (max-width: 1040px) {
+        font-size: 2vw !important;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 8px !important;
+    }
+}
+
 .content {
+    width: 100%;
     max-width: 1160px; /* Adjust based on your layout needs */
     margin: auto; /* Centers the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* header nav */
 .header-nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 240px 0px 240px;
     align-items: center;
+    max-width: 1240px;
+    margin: auto;
 }
 
 .company-logo {
@@ -62,6 +77,7 @@ a {
     color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
+
     font-weight: 400;
     outline: none; /* Remove outline on focus */
     padding: 10px 20px; /* Add padding for better visual appearance */
@@ -75,6 +91,8 @@ a {
 
 /* hero section */
 .hero-container {
+    margin: auto;
+    width: 100%;
     display: flex;
     justify-content: center; /* Adjust as needed */
     align-items: center; /* This vertically aligns the children */
@@ -84,8 +102,11 @@ a {
     /* flex: 1; Adjust the flex-grow as needed */
     padding-top: 25vh; /* Optional for spacing */
     padding-bottom: 20vh;
+    width: 100%;
     /* Other existing styles */
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 /* .gif-container {
@@ -104,6 +125,7 @@ a {
 .hero-title {
     font-size: 42px;
     font-weight: 700;
+    width: 100%;
     max-width: 860px;
     padding-bottom: 30px;
 }
@@ -111,6 +133,7 @@ a {
 .hero-subtext {
     font-family: "Oxygen Mono", monospace;
     font-size: 22px;
+    width: 100%;
     max-width: 860px;
     padding-bottom: 30px;
     line-height: 160%;
@@ -135,6 +158,11 @@ a {
     border: 1.5px solid;
     border-radius: 8px;
     margin-right: 20px;
+    margin: 16px;
+
+    @media screen and (max-width: 1040px) {
+        width: CALC(100% - 32px);
+    }
 }
 
 .youtube-button {
@@ -168,6 +196,11 @@ a {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
     position: relative;
     color: white;
+
+    @media screen and (max-width: 1040px) {
+        width: CALC(100% - 32px);
+    }
+}
 }
 
 .feature-item h3 {
@@ -188,12 +221,18 @@ a {
     color: white;
 }
 
+.demo-video {
+    width: 640px;
+    height: 360px;
+}
+
 /* video section */
 .video-example-section {
     display: flex;
     padding: 40px 10px;
     margin-top: 20px; /* Adjust as needed */
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .video-text-container {
@@ -207,6 +246,7 @@ a {
 }
 
 .video-container {
+    width: 100%;
     flex-basis: 70%;
     margin-left: 20px;
     margin-right: 20px;
@@ -217,6 +257,7 @@ a {
     height: auto;
     margin: auto;
 }
+
 
 /* code example section */
 .code-example-section {
@@ -240,6 +281,7 @@ a {
     flex-basis: 70%;
     margin-left: 20px;
     margin-right: 20px;
+    width: 100%;
 }
 
 .highlight {
@@ -251,6 +293,10 @@ pre {
     margin-left: 3em;
     overflow-x: auto; /* Allows scrolling for long code lines */
     border-radius: 8px;
+    @media screen and (max-width: 1040px) {
+        padding: 0px !important;
+        
+    }
 }
 
 /* performance section */
@@ -259,6 +305,7 @@ pre {
     padding: 40px 10px;
     margin-top: 20px; /* Adjust as needed */
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .performance-text-container {
@@ -287,13 +334,17 @@ pre {
 /* how to section */
 .how-container {
     background-color: #111111;
-    width: 1000px;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: space-between;
     padding: 30px 0px 30px 0px;
     margin: 80px;
+    @media screen and (max-width: 1040px) {
+        width: CALC(100% - 32px);
+        margin: auto;
+        
+    }
 }
 
 .how-to-title {
@@ -302,12 +353,26 @@ pre {
     padding-bottom: 30px;
 }
 
+.how-to-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    @media screen and (max-width: 515px) {
+        transform: scale(0.8);
+    }
+    @media screen and (max-width: 435px) {
+        transform: scale(0.6);
+        
+    }
+}
+
 .how-to-box {
+    width: 412px;
     display: flex;
     justify-content: start;
     align-items: center;
-    padding-left: 35%;
-    padding-bottom: 30px;
 }
 
 .how-to-icon {
@@ -329,3 +394,17 @@ pre {
     width: 260px;
     height: 60px;
 }
+
+.mobile-column {
+    @media screen and (max-width: 1040px) {
+        flex-direction: column;
+        
+    }
+}
+
+.media-responsive {
+    @media screen and (max-width: 1040px) {
+        width: CALC(100% - 32px);
+    }
+}
+
