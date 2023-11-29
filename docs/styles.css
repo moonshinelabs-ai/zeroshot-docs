@@ -475,6 +475,22 @@ pre {
     align-items: center;
 }
 
+.contributors-text {
+    font-family: "Oxygen Mono", monospace;
+    padding: 2vh 0vh 3vh 0vh;
+    color: white;
+    text-align: center;
+}
+
+.contributor-name{
+    color: white;
+    text-decoration: underline;
+}
+
+.contributor-name:hover{
+    color:#00ff75;
+}
+
 /* page animation */
 main {
     animation: fadeInAnimation ease-out 2s;
