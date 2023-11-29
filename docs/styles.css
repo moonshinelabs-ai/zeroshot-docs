@@ -432,3 +432,11 @@ pre {
     }
 }
 
+.subtext {  
+    font-size: 16px;
+    color: gray;
+    padding-bottom: 40px;
+    margin-top: -8px;
+    max-width: 380px;
+}
+
