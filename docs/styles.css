@@ -181,10 +181,21 @@ a {
     color: white;
 }
 
+.youtube-button:hover {
+    background-color: white;
+    color: black;
+}
+
 .try-button {
     background-color: black;
     color: #00ff75;
     border-color: #00ff75;
+}
+
+.try-button:hover {
+    background-color:#00ff75;
+    color: black;
+    border-color: black;
 }
 
 /* features section */
@@ -416,6 +427,12 @@ pre {
     font-size: 12px;
     width: 260px;
     height: 60px;
+}
+
+.trainmodel-button:hover {
+    background-color:#00ff75;
+    color:black;
+    border-color:#00ff75;
 }
 
 .mobile-column {
