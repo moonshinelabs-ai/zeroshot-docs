@@ -104,8 +104,8 @@ a {
 
 .hero-text-container {
     /* flex: 1; Adjust the flex-grow as needed */
-    padding-top: 25vh; /* Optional for spacing */
-    padding-bottom: 20vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
     width: 100%;
     /* Other existing styles */
     text-align: center;
@@ -119,12 +119,6 @@ a {
         
     }
 }
-
-/* .gif-container {
-    flex: 1; /* Adjust the flex-grow as needed */
-/* padding: 20px;
-    max-width: 35%;
-} */
 
 .hero-gif {
     width: 100%;
@@ -204,8 +198,7 @@ a {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    margin-top: 100px; /* Space between this and the content-container */
-    margin-bottom: 240px;
+    margin-bottom: 5vh;
 }
 
 .feature-item {
@@ -238,7 +231,8 @@ a {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    font-size: 28px;
+    font-size: 24px;
+    padding: 5px;
     color: white;
 }
 
@@ -250,16 +244,13 @@ a {
 /* video section */
 .video-example-section {
     display: flex;
-    padding: 40px 10px;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 10vh;
     align-items: center;
     flex-direction: row-reverse;
 }
 
 .video-text-container {
-    flex-basis: 30%;
-    margin-right: 120px;
-    margin-left: 40px;
+    padding: 2vw;
     font-size: 26px;
     color: gray;
     font-weight: 700;
@@ -288,15 +279,12 @@ a {
 /* code example section */
 .code-example-section {
     display: flex;
-    padding: 40px 10px;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 10vh;
     align-items: center;
 }
 
 .description-container {
-    flex-basis: 30%;
-    margin-right: 120px;
-    margin-left: 40px;
+    padding: 3vw;
     font-size: 26px;
     color: gray;
     font-weight: 700;
@@ -333,16 +321,13 @@ pre {
 /* performance section */
 .performance-section {
     display: flex;
-    padding: 40px 10px;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 10vh;
     align-items: center;
     flex-direction: row-reverse;
 }
 
 .performance-text-container {
-    flex-basis: 30%;
-    margin-right: 120px;
-    margin-left: 40px;
+    padding: 3vw;
     font-size: 26px;
     color: gray;
     font-weight: 700;
@@ -362,7 +347,7 @@ pre {
 
 .performance-example {
     width: 70%;
-    max-width: 560px !important;
+    max-width: 730px !important;
     height: auto;
     margin: auto;
     border-radius: 8px;
@@ -374,17 +359,17 @@ pre {
 
 /* how to section */
 .how-container {
-    background-color: #111111;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: space-between;
-    padding: 30px 0px 30px 0px;
-    margin: 80px;
+    margin-top: 10vh;
+    padding: 2% 2% 2% 2%;
     @media screen and (max-width: 1040px) {
         width: CALC(100% - 32px);
-        margin: auto;
-        
     }
 }
 
@@ -392,6 +377,9 @@ pre {
     font-size: 36px;
     font-weight: 700;
     padding-bottom: 30px;
+    @media screen and (max-width: 1040px) {
+        padding: 0px !important;
+    }
 }
 
 .how-to-box-wrapper {
@@ -417,7 +405,6 @@ pre {
 .how-to-text {
     font-family: "Oxygen Mono", monospace;
     font-size: 20px;
-    margin-left: 20px;
 }
 
 .trainmodel-button {
