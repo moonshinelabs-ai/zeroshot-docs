@@ -334,13 +334,17 @@ pre {
 /* how to section */
 .how-container {
     background-color: #111111;
-    width: 1000px;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: space-between;
     padding: 30px 0px 30px 0px;
     margin: 80px;
+    @media screen and (max-width: 1040px) {
+        width: CALC(100% - 32px);
+        margin: auto;
+        
+    }
 }
 
 .how-to-title {
@@ -349,12 +353,26 @@ pre {
     padding-bottom: 30px;
 }
 
+.how-to-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    @media screen and (max-width: 515px) {
+        transform: scale(0.8);
+    }
+    @media screen and (max-width: 435px) {
+        transform: scale(0.6);
+        
+    }
+}
+
 .how-to-box {
+    width: 412px;
     display: flex;
     justify-content: start;
     align-items: center;
-    padding-left: 35%;
-    padding-bottom: 30px;
 }
 
 .how-to-icon {
