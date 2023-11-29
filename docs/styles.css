@@ -352,12 +352,12 @@ pre {
 
 .performance-example {
     width: 70%;
-    max-width: 560px;
+    max-width: 560px !important;
     height: auto;
     margin: auto;
     border-radius: 8px;
     @media screen and (max-width: 1040px) {
-        max-width: none;
+        max-width: none !important;
         
     }
 }
