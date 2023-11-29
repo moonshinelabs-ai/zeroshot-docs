@@ -82,6 +82,10 @@ a {
     outline: none; /* Remove outline on focus */
     padding: 10px 20px; /* Add padding for better visual appearance */
     cursor: pointer; /* Add pointer cursor for interactivity */
+    @media screen and (max-width: 1040px) {
+        padding: 10px 10px;
+        
+    }
 }
 
 .menu-nav:hover {
@@ -107,6 +111,13 @@ a {
     text-align: center;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 1040px) {
+        width: CALC(100% - 32px);
+        margin: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        
+    }
 }
 
 /* .gif-container {
@@ -243,6 +254,11 @@ a {
     color: gray;
     font-weight: 700;
     max-width: 860px;
+    @media screen and (max-width: 1040px) {
+        margin: 0px;
+        width: CALC(100% - 32px);
+        
+    }
 }
 
 .video-container {
@@ -275,6 +291,11 @@ a {
     color: gray;
     font-weight: 700;
     max-width: 860px;
+    @media screen and (max-width: 1040px) {
+        margin: 0px;
+        width: CALC(100% - 32px);
+        
+    }
 }
 
 .code-container {
@@ -316,6 +337,11 @@ pre {
     color: gray;
     font-weight: 700;
     max-width: 860px;
+    @media screen and (max-width: 1040px) {
+        margin: 0px;
+        width: CALC(100% - 32px);
+        
+    }
 }
 
 .performance-chart-container {
@@ -325,10 +351,15 @@ pre {
 }
 
 .performance-example {
-    width: 100%;
+    width: 70%;
+    max-width: 560px;
     height: auto;
     margin: auto;
     border-radius: 8px;
+    @media screen and (max-width: 1040px) {
+        max-width: none;
+        
+    }
 }
 
 /* how to section */
@@ -357,22 +388,15 @@ pre {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     width: 100%;
     @media screen and (max-width: 515px) {
         transform: scale(0.8);
     }
-    @media screen and (max-width: 435px) {
-        transform: scale(0.6);
-        
-    }
+
 }
 
 .how-to-box {
-    width: 412px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+ 
 }
 
 .how-to-icon {
