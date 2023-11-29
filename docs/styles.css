@@ -212,7 +212,6 @@ a {
         width: CALC(100% - 32px);
     }
 }
-}
 
 .feature-item h3 {
     margin-top: 2px;
@@ -395,9 +394,9 @@ pre {
 
 }
 
-.how-to-box {
+/* .how-to-box {
  
-}
+} */
 
 .how-to-icon {
     height: 50px;
