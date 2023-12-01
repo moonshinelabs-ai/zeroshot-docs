@@ -10,33 +10,114 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     min-height: 100vh;
     font-family: "Open Sans", sans-serif;
     color: white;
 }
 
+code {
+    @media screen and (max-width: 1040px) {
+        font-size: 2vw !important;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 8px !important;
+    }
+}
+
 .content {
+    width: 100%;
     max-width: 1160px; /* Adjust based on your layout needs */
     margin: auto; /* Centers the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* header nav */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.company-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    max-width: 60px;
+    padding-right: 5px;
+    padding-top: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.home-nav {
+    border: none; /* Remove border */
+    background-color: transparent; /* Set background to transparent */
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    outline: none; /* Remove outline on focus */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+}
+
+.menu-nav {
+    border: none; /* Remove border */
+    background-color: transparent; /* Set background to transparent */
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+
+    font-weight: 400;
+    outline: none; /* Remove outline on focus */
+    padding: 10px 20px; /* Add padding for better visual appearance */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+    @media screen and (max-width: 1040px) {
+        padding: 10px 10px;
+        
+    }
+}
+
+.menu-nav:hover {
+    font-family: "Oxygen Mono", monospace;
+    color: #00ff75;
 }
 
 /* hero section */
 .hero-container {
+    margin: auto;
+    width: 100%;
     display: flex;
-    justify-content: space-around; /* Adjust as needed */
+    justify-content: center; /* Adjust as needed */
     align-items: center; /* This vertically aligns the children */
 }
 
 .hero-text-container {
-    flex: 1; /* Adjust the flex-grow as needed */
-    padding: 20px; /* Optional for spacing */
+    /* flex: 1; Adjust the flex-grow as needed */
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    width: 100%;
     /* Other existing styles */
-}
-
-.gif-container {
-    flex: 1; /* Adjust the flex-grow as needed */
-    padding: 20px;
-    max-width: 35%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 1040px) {
+        width: CALC(100% - 32px);
+        margin: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        
+    }
 }
 
 .hero-gif {
@@ -49,15 +130,17 @@ main {
 .hero-title {
     font-size: 42px;
     font-weight: 700;
+    width: 100%;
     max-width: 860px;
     padding-bottom: 30px;
-    padding-top: 20px;
 }
 
 .hero-subtext {
     font-family: "Oxygen Mono", monospace;
     font-size: 22px;
-    max-width: 760px;
+    color: gray;
+    width: 100%;
+    max-width: 860px;
     padding-bottom: 30px;
     line-height: 160%;
     letter-spacing: 0.24px;
@@ -66,11 +149,10 @@ main {
 .hero-buttons {
     display: flex;
     justify-content: center;
-    margin: 30px;
 }
 
 .try-button,
-.github-button,
+.youtube-button,
 .trainmodel-button {
     display: inline-block;
     height: 64px;
@@ -81,12 +163,22 @@ main {
     cursor: pointer;
     border: 1.5px solid;
     border-radius: 8px;
-    margin: 20px;
+    margin-right: 20px;
+    margin: 16px;
+
+    @media screen and (max-width: 1040px) {
+        width: CALC(100% - 32px);
+    }
 }
 
-.github-button {
+.youtube-button {
     background-color: black;
     color: white;
+}
+
+.youtube-button:hover {
+    background-color: white;
+    color: black;
 }
 
 .try-button {
@@ -95,35 +187,49 @@ main {
     border-color: #00ff75;
 }
 
+.try-button:hover {
+    background-color:#00ff75;
+    color: black;
+    border-color: black;
+}
+
 /* features section */
 .features-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    margin-top: 100px; /* Space between this and the content-container */
-    margin-bottom: 140px;
+    margin-bottom: 5vh;
 }
 
 .feature-item {
-    background-color: black;
-    border: 2px solid white;
-    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid #131313de;
+    border-radius: 16px;
     padding: 20px;
     width: 30%;
     margin: 10px 20px; /* Space between items */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
     position: relative;
     color: white;
+
+    @media screen and (max-width: 1040px) {
+        width: CALC(100% - 32px);
+        
+    }
 }
 
-.feature-item h3 {
+.feature-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
     margin-top: 2px;
     margin-bottom: 3em; /* Newline's worth of whitespace */
 }
 
-.feature-item p {
+.feature-subtext { 
     font-family: "Oxygen Mono", monospace;
+    color: white;
     margin-bottom: 2.5em;
 }
 
@@ -131,60 +237,44 @@ main {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    font-size: 28px;
+    font-size: 24px;
+    padding: 5px;
     color: white;
 }
 
-/* performance section */
-.performance-section {
-    display: flex;
-    padding: 40px 10px;
-    margin-top: 20px; /* Adjust as needed */
-    align-items: center;
-}
-
-.performance-text-container {
-    flex-basis: 30%;
-    margin-right: 120px;
-    margin-left: 40px;
-    font-size: 26px;
-    color: gray;
-    font-weight: 700;
-    max-width: 860px;
-}
-
-.performance-chart-container {
-    flex-basis: 70%;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.performance-example {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    border-radius: 8px;
+.demo-video {
+    width: CALC(100% - 32px);
+    height: 720px;
+    @media screen and (max-width: 1040px) {
+        height: 340px;
+        
+    }
+    
 }
 
 /* video section */
 .video-example-section {
     display: flex;
-    padding: 40px 10px;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 10vh;
     align-items: center;
+    flex-direction: column;
 }
 
 .video-text-container {
-    flex-basis: 30%;
-    margin-right: 120px;
-    margin-left: 40px;
+    padding: 2vw;
     font-size: 26px;
     color: gray;
-    font-weight: 700;
+    font-weight: 600;
     max-width: 860px;
+    @media screen and (max-width: 1040px) {
+        margin: 0px;
+        width: CALC(100% - 32px);
+        
+    }
 }
 
 .video-container {
+    width: 100%;
     flex-basis: 70%;
     margin-left: 20px;
     margin-right: 20px;
@@ -196,28 +286,38 @@ main {
     margin: auto;
 }
 
+
 /* code example section */
 .code-example-section {
     display: flex;
-    padding: 40px 10px;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 10vh;
     align-items: center;
 }
 
 .description-container {
-    flex-basis: 30%;
-    margin-right: 120px;
-    margin-left: 40px;
+    padding: 3vw;
     font-size: 26px;
     color: gray;
-    font-weight: 700;
+    font-weight: 600;
     max-width: 860px;
+    @media screen and (max-width: 1040px) {
+        margin: 0px;
+        width: CALC(100% - 32px);
+        
+    }
 }
 
 .code-container {
     flex-basis: 70%;
     margin-left: 20px;
     margin-right: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.language-py{
+    background-color: #131313de !important;
 }
 
 .highlight {
@@ -226,36 +326,102 @@ main {
 
 pre {
     max-width: 100%;
+    background-color: #131313de;
     margin-left: 3em;
     overflow-x: auto; /* Allows scrolling for long code lines */
-    border-radius: 8px;
+    border-radius: 40px;
+    @media screen and (max-width: 1040px) {
+        padding: 0px !important;
+        width: CALC(100% - 32px)
+        
+    }
+}
+
+/* performance section */
+.performance-section {
+    display: flex;
+    margin-top: 10vh;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.performance-text-container {
+    padding: 3vw;
+    font-size: 26px;
+    color: gray;
+    font-weight: 600;
+    max-width: 860px;
+    @media screen and (max-width: 1040px) {
+        margin: 0px;
+        width: CALC(100% - 32px);
+        
+    }
+}
+
+.performance-chart-container {
+    flex-basis: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.performance-example {
+    width: 70%;
+    max-width: 730px !important;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+    background-color: #161616;
+    border-radius: 40px;
+    @media screen and (max-width: 1040px) {
+        max-width: none !important;
+        width: CALC(100% - 32px - 60px) !important;
+        
+    }
 }
 
 /* how to section */
 .how-container {
-    background-color: #111111;
-    width: 1000px;
+    background-color: #131313de;
+    border: 2px solid #131313de;
+    border-radius: 70px;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: space-between;
-    padding: 30px 0px 30px 0px;
-    margin: 80px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 2% 2% 4% 2%;
+    width: 100%;
+    @media screen and (max-width: 1040px) {
+        width: CALC(100% - 62px);
+        margin-bottom: 5vh;
+    }
 }
 
 .how-to-title {
     font-size: 36px;
     font-weight: 700;
     padding-bottom: 30px;
+    @media screen and (max-width: 1040px) {
+        padding: 0px !important;
+    }
 }
 
-.how-to-box {
+.how-to-box-wrapper {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
     align-items: center;
-    padding-left: 35%;
-    padding-bottom: 30px;
+    width: 100%;
+    justify-content: center;
+    @media screen and (max-width: 515px) {
+        transform: scale(0.8);
+    }
+
 }
+
+/* .how-to-box {
+ 
+} */
 
 .how-to-icon {
     height: 50px;
@@ -265,7 +431,6 @@ pre {
 .how-to-text {
     font-family: "Oxygen Mono", monospace;
     font-size: 20px;
-    margin-left: 20px;
 }
 
 .trainmodel-button {
@@ -275,4 +440,69 @@ pre {
     font-size: 12px;
     width: 260px;
     height: 60px;
+}
+
+.trainmodel-button:hover {
+    background-color:#00ff75;
+    color:black;
+    border-color:#00ff75;
+}
+
+.mobile-column {
+    @media screen and (max-width: 1040px) {
+        flex-direction: column;
+        
+    }
+}
+
+.media-responsive {
+    @media screen and (max-width: 1040px) {
+        width: CALC(100% - 32px);
+    }
+}
+
+.subtext {  
+    font-size: 16px;
+    color: gray;
+    padding-bottom: 40px;
+    margin-top: -8px;
+    max-width: 380px;
+}
+
+.horizontal-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contributors-text {
+    font-family: "Oxygen Mono", monospace;
+    padding: 2vh 0vh 3vh 0vh;
+    color: white;
+    text-align: center;
+}
+
+.contributor-name{
+    color: white;
+    text-decoration: underline;
+}
+
+.contributor-name:hover{
+    color:#00ff75;
+}
+
+/* page animation */
+main {
+    animation: fadeInAnimation ease-out 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }

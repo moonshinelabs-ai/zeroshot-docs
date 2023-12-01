@@ -7,15 +7,44 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="icon" href="images/zeroshot-logo.png" type="image/png">
     <title>zeroshot</title>
 </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCXCLJPLK9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JCXCLJPLK9');
+</script>
 <body>
-    <!-- <header>
-        code for menu nav will be here
-    </header> -->
+    <header>
+        <!-- website menu navigation -->
+        <div class="header-nav mobile-column">
+            <div class="company-logo">
+                <img src="images/zeroshot-logo.png" class="logo"/>
+                <a href="https://usezeroshot.com" target="_self">
+                    <button class="home-nav">zeroshot</button>
+                </a>
+            </div>
+    
+            <div class="website-nav">
+                <a href="https://github.com/moonshinelabs-ai/zeroshot-docs/blob/main/general/under_the_hood.md" target="_blank">
+                    <button class="menu-nav">how it works</button>
+                </a>
+                <a href="https://github.com/moonshinelabs-ai/zeroshot-docs/blob/main/general/getting_started.md" target="_blank">
+                    <button class="menu-nav">instructions</button>
+                </a>
+                <a href="https://github.com/moonshinelabs-ai/zeroshot-python" target="_blank">
+                    <button class="menu-nav">github</button>
+                </a>
+            </div>
+        </div>
+    </header>
 
     <main>
-        <div class="content">
+        <div class="content fadeInUp-animation">
             <!-- landing page hero -->
             <div class="hero-container">
                 <div class="hero-text-container">
@@ -23,9 +52,9 @@
                         <p class="hero-title">Harness the power of text to add computer vision to your app in minutes</p>
                         <p class="hero-subtext">Zeroshot is an open source  tool for developers that creates image classifiers 
                             from text descriptions</p>
-                        <div class="hero-buttons">
-                            <a href="https://github.com/moonshinelabs-ai/zeroshot-python" target="_blank">
-                                <button class="github-button">Github</button>
+                        <div class="hero-buttons mobile-column">
+                            <a href="https://www.youtube.com/watch?v=S4R1gtmM-Lo" target="_blank">
+                                <button class="youtube-button">Watch demo</button>
                             </a>
                             <a href="https://app.usezeroshot.com" target="_blank">
                                 <button class="try-button">Try it out</button>
@@ -33,41 +62,39 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- show examples of image classification with gif -->
-                <div class="gif-container">
-                    <img src="images/placeholder-tall.png" class="hero-gif"/>
-                </div>
             </div>
+
             <!-- feature section -->
-            <div class="features-container">
+            <div class="features-container mobile-column">
                 <div class="feature-item">
-                    <h3>Open Source</h3>
-                    <p>Zeroshot is a free, community-driven product for versatile applications.</p>
+                    <p class="feature-title">Open Source</p>
+                    <p class="feature-subtext">Zeroshot is a free, community-driven product for versatile applications.</p>
                     <i class="fa fa-user-group feature-logo"></i>
                 </div>
                 <div class="feature-item">
-                    <h3>Low Latency</h3>
-                    <p>Fast and efficient real-time image classification. More accurate and faster than CLIP.</p>
+                    <p class="feature-title">Low Latency</p>
+                    <p class="feature-subtext">Fast and efficient real-time image classification. More accurate and faster than OpenAI's CLIP.</p>
                     <i class="fa fa-gauge-high feature-logo"></i>
                 </div>
                 <div class="feature-item">
-                    <h3>Offline Access</h3>
-                    <p>No internet required, you can use Zeroshot and deploy from anywhere, anytime.</p>
+                    <p class="feature-title">Offline Access</p>
+                    <p class="feature-subtext">No internet required, you can use Zeroshot and deploy from anywhere, anytime.</p>
                     <i class="fa fa-globe feature-logo"></i>
                 </div>
             </div>
+
             <!-- video example -->
-            <div class="video-example-section">
-                <div class="video-container">
-                    <iframe width="640" height="400" src="https://www.youtube.com/embed/S4R1gtmM-Lo?si=PqN-3XzqPaZGE8cz&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+            <div class="video-example-section mobile-column">
                 <div class="video-text-container">
                     <p>Build a classifier <span class="highlight">in seconds</span>, with no labeling required.</p>
                 </div>
+                <div class="video-container">
+                    <iframe class="demo-video media-responsive" src="https://www.youtube.com/embed/S4R1gtmM-Lo?si=PqN-3XzqPaZGE8cz&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
+
             <!-- code example -->
-            <div class="code-example-section">
+            <div class="code-example-section mobile-column">
                 <div class="description-container">
                     <p>Deploy to CPU or GPU easily with a <span class="highlight">few lines of code</span></p>
                 </div>
@@ -90,46 +117,65 @@
                 </div>
             </div>
             <!-- performance example -->
-            <div class="performance-section">
-                <div class="performance-chart-container">
-                    <img src="images/performance.png" class="performance-example" />
-                </div>
+            <div class="performance-section mobile-column">
                 <div class="performance-text-container">
                     <p><span class="highlight">Save costs</span> with a fast, local model that doesn't cost money each time it's run.</p>
                 </div>
+               
+                    <img src="images/performance-chart-dark.png" class="performance-example media-responsive" />
+          
             </div>
 
             <!-- update with svg files later when have time -->
-            <div class="how-container">
-                <p class="how-to-title">How it works</p>
-                <div class="how-to-box">
-                    <img src="images/model_training.png" class="how-to-icon" />
-                    <p class="how-to-text">Train your model</p>
-                </div>
-                <div class="how-to-box">
-                    <img src="images/download.png" class="how-to-icon" />
-                    <p class="how-to-text">Install Zeroshot</p>
-                </div>
-                <div class="how-to-box">
-                    <img src="images/create_new_folder.png" class="how-to-icon" />
-                    <p class="how-to-text">Import Zeroshot</p>
-                </div>
-                <div class="how-to-box">
-                    <img src="images/widgets.png" class="how-to-icon" />
-                    <p class="how-to-text">Use with your custom model</p>
-                </div>
-                <div class="how-to-box">
-                    <a href="https://app.usezeroshot.com" target="_blank">
-                        <button class="trainmodel-button">Train your custom model ></button>
-                    </a>
+            <div class="horizontal-center">
+                <div class="how-container">
+                    <p class="how-to-title">How it works</p>
+                    <div class="how-to-box-wrapper">
+                        <div class="how-to-box">
+                            <img src="images/model_training.png" class="how-to-icon" />
+                            <p class="how-to-text">Train your model</p>
+                            <div class="subtext">
+                                Train your custom model in only a few minutes with our simple web interface. No data required.
+                            </div>
+                        </div>
+                        <div class="how-to-box">
+                            <img src="images/download.png" class="how-to-icon" />
+                            <p class="how-to-text">Install Zeroshot</p>
+                            <div class="subtext">
+                                Install Zeroshot with pip or conda. Zeroshot is open source and free to use.
+                            </div>
+                        </div>
+                        <div class="how-to-box">
+                            <img src="images/create_new_folder.png" class="how-to-icon" />
+                            <p class="how-to-text">Import Zeroshot</p>
+                            <div class="subtext">
+                                Import Zeroshot into your project and use it to classify images.
+                        </div>
+                        <div class="how-to-box">
+                            <img src="images/widgets.png" class="how-to-icon" />
+                            <p class="how-to-text">Use with your custom model</p>
+                            <div class="subtext">
+                                To start using your custom trained model, just paste in the UUID generated from the web interface.
+                        </div>
+                        <div class="how-to-box">
+                            <a href="https://app.usezeroshot.com" target="_blank">
+                                <button class="trainmodel-button">Train your custom model ></button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- <footer>
-        code for footer
-    </footer> -->
+    <footer>
+        <p class="contributors-text"> Project contributors from San Francisco, CA: 
+            <a href="https://twitter.com/nateharada" class="contributor-name" target=_blank>Nate Harada</a>, 
+            <a href="https://www.instagram.com/heyjeffshaw/" class="contributor-name" target=_blank>Jeff Shaw</a>, 
+            <a href="https://twitter.com/cathyliiiu" class="contributor-name" target=_blank>Cathy Liu</a> 
+        </p>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
