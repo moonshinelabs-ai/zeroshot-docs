@@ -270,7 +270,8 @@ a {
 }
 
 video {
-    max-width: 100%;
+    max-width: 860px;
+    padding: 2vw;
     height: auto;
     display: block;
 }
