@@ -483,6 +483,7 @@ pre {
 
 .contributors-text {
     font-family: "Oxygen Mono", monospace;
+    font-size: 12px;
     padding: 2vh 0vh 3vh 0vh;
     color: white;
     text-align: center;
