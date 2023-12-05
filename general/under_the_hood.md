@@ -4,7 +4,7 @@ How does it work?
 
 Zeroshot uses a combination of two powerful AI models to create classifiers from text. The major components are:
 
-- A large image dataset (LAION-5B) and a text search model (CLIP).
+- A large image dataset (YFCC100M) and a text search model (CLIP).
 - A powerful but small pre-trained model (DinoV2).
 - A simple web-app that assembles the final model.
 
